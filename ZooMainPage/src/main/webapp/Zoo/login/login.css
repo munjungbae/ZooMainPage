@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+body {
+	background-color: #f7f7f7;
+}
+
+.loginBody {
+	margin: 70px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.top {
+	border: 1px solid rgba(0, 0, 0, 0.404);
+	border-radius: 30px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+}
+
+.ID, .pwd {
+	background-color: #f7f7f7;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.411);
+	height: 35px;
+	width: 200px;
+	font-size: 15px;
+	left: 10px;
+}
+
+.delete_id {
+	background-color: #f7f7f7;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.411);
+	height: 35px;
+	width: 200px;
+	font-size: 15px;
+	left: 10px;
+}
+
+.tdicon {
+	text-align: center;
+	font-size: 22px;
+	padding: 5px;
+}
+
+.fa-id-badge, .fa-key {
+	color: black;
+}
+
+span {
+	font-size: 10px;
+}
+
+.register {
+	border: 1px solid rgba(0, 0, 0, 0.404);
+	border-radius: 30px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.register_id {
+	margin: 0 auto;
+}
+
+.id, .pass, .repass, .name, .email, .zipcode, .address1, .address2 {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.411);
+	height: 35px;
+	width: 350px;
+	font-size: 15px;
+	left: 10px;
+	background-color: #f7f7f7;
+	margin-top: 10px;
+}
+
+.phone2, .phone3 {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.411);
+	height: 35px;
+	width: 122px;
+	font-size: 15px;
+	left: 10px;
+	background-color: #f7f7f7;
+}
+
+.phone1 {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.411);
+	width: 70px;
+	height: 35px;
+	background-color: #f7f7f7;
+	font-size: 15px;
+}
+
+.idCheck, .find {
+	position: absolute;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	height: 32px;
+	font-weight: 1000;
+	cursor: pointer;
+	width: 65px;
+	margin: 15px auto;
+	background-color: #0f5906;
+}
+
+.idCheck:active, .find:active {
+	color: #0f5906;
+	background-color: #f7f7f7;
+}
+
+.register_user, .reset {
+	background-color: #0f5906;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	height: 35px;
+	font-weight: 1000;
+	cursor: pointer;
+	width: 173px;
+	margin: 15px auto;
+}
+
+.register_user:active, .reset:active {
+	color: #0f5906;
+	background-color: #f7f7f7;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.login_ID, .register_ID {
+	background-color: #0f5906;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	height: 35px;
+	font-weight: 1000;
+	cursor: pointer;
+	width: 115px;
+	margin: 15px 0px 10px 0px;
+}
+
+.login_ID:active, .register_ID:active {
+	color: #0f5906;
+	background-color: #f7f7f7;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	justify-content: center;
+	font-size: 14px;
+}
+
+.dong, .value {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	font-size: 14px;
+}
+
+.ID {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.411);
+	height: 35px;
+	width: 200px;
+	font-size: 15px;
+	left: 10px;
+	background-color: #f7f7f7;
+}
+
+.zipCheckBody {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: 13px;
+}
+
+.dongCheck {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.search, .close {
+	background-color: #0f5906;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-weight: 1000;
+	cursor: pointer;
+}
+
+.search:active, .close:active {
+	color: #0f5906;
+	background-color: #f7f7f7;
+}
+
+.dongList {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: 13px;
+}
