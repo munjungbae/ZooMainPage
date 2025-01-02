@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+body {
+	width: 1580px;
+	position: absolute;
+	background-color: #f7f7f7;
+	margin: 0 150px;
+}
+
+.banner {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	margin: 0px 100px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.banner_left {
+	position: relative;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	font-size: 45px;
+	font-weight: 900;
+	left: 10px;
+}
+
+.fa-cat {
+	margin: 0px 10px 0px 0px;
+}
+
+.banner_right ul {
+	position: relative;
+	list-style: none;
+	display: flex;
+	right: 230px;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.banner_right li {
+	margin: 0px 20px;
+	padding: 20px 0px;
+}
+
+.input_button {
+	display: flex;
+	align-items: center;
+}
+
+.ticket {
+	background-color: #f7f7f7;
+	padding: 7px;
+	border-radius: 50px;
+	font-weight: 900;
+	font-size: 15px;
+	text-align: center;
+}
+
+.fa-ticket {
+	font-size: 15px;
+}
+
+.ticket:hover {
+	border-color: rgba(0, 0, 0, 0.301);;
+	cursor: pointer;
+	font-weight: 900;
+	color: rgba(0, 0, 0, 0.301);
+}
+
+.ticket>span {
+	margin: 0px 0px 0px 5px;
+}
+
+.fa-user {
+	font-size: 25px;
+	margin: 0px 10px 0px 15px;
+}
+
+.fa-user:hover {
+	cursor: pointer;
+	font-weight: 900;
+	color: rgba(0, 0, 0, 0.301);
+}
+
+.dropdown_content {
+	position: absolute;
+	background-color: #f7f7f7;
+	display: none;
+	z-index: 0;
+	font-size: 13px;
+	width: 123px;
+	top: 60px;
+	font-weight: 300;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dropdown_button:hover {
+	color: rgba(0, 0, 0, 0.401);
+}
+
+.dropdown_content a:hover {
+	transition: all .3s;
+	background-color: rgb(38, 78, 2);
+	color: white;
+	z-index: 2;
+}
+
+.dropdown:hover  .dropdown_content {
+	display: block;
+	z-index: 2;
+	transition: all .3s;
+}
+
+.dropdown:hover .dropdown_content a {
+	transition: all .3s;
+	z-index: 2;
+	display: block;
+}
+
+.dropdown_content a {
+	text-align: left;
+	padding: 8px;
+}
+
+.myPage>li {
+	padding: 20px 5px;
+}
+
+.myPage {
+	position: relative;
+	font-size: 15px;
+	font-weight: 400;
+	list-style: none;
+}
+
+.my_page {
+	cursor: pointer;
+}
+
+hr {
+	width: 1290px;
+	margin: 0 150px;
+}
+
+img {
+	position: relative;
+	top: 60px;
+	right: 225px;
+	height: 450px;
+	width: 450px;
+	border-radius: 20px;
+}
+
+.submit {
+	background-color: #0f5906;
+	color: white;
+	border: none;
+	height: 45px;
+	font-size: large;
+	font-weight: 1000;
+	cursor: pointer;
+	width: 290px;
+	position: relative;
+	top: -6px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.submit:hover {
+	transition: all .3s;
+	color: #0f5906;
+	background-color: #f7f7f7;
+}
+
+.title {
+	position: absolute;
+	right: 265px;
+	bottom: 400px;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.price {
+	position: absolute;
+	right: 265px;
+	bottom: 335px;
+	font-size: 40px;
+	font-weight: 900;
+}
+
+.detail {
+	position: absolute;
+	right: 640px;
+	bottom: 305px;
+	font-size: 10px;
+	color: rgba(0, 0, 0, 0.705);
+}
+
+#ticket_list {
+	position: absolute;
+	right: 265px;
+	bottom: 265px;
+	height: 30px;
+	width: 500px;
+	text-align: left;
+	color: rgba(0, 0, 0, 0.788)
+}
+
+option {
+	text-align: left;
+}
+
+.number_increment {
+	display: none;
+	position: absolute;
+	width: 40px;
+	height: 25px;
+	font-size: 15px;
+	right: 265px;
+	bottom: 230px;
+}
+
+#result {
+	position: absolute;
+	right: 265px;
+	bottom: 225px;
+	height: 30px;
+	width: 500px;
+	text-align: left;
+	color: rgba(0, 0, 0, 0.788);
+	font-size: 15px;
+}
+
+#price_sum {
+	position: relative;
+	right: 265px;
+	bottom: 215px;
+	height: 30px;
+	width: 500px;
+	text-align: left;
+	color: rgba(0, 0, 0, 0.788);
+	font-size: 15px;
+}
+
+.submit_detail {
+	background-color: #0f5906;
+	color: white;
+	border: none;
+	height: 45px;
+	font-size: large;
+	font-weight: 1000;
+	cursor: pointer;
+	width: 500px;
+	position: absolute;
+	right: 265px;
+	border-radius: 3px;
+	bottom: 180px;
+}
+
+.submit_detail:hover {
+	transition: all .3s;
+	color: #0f5906;
+	background-color: #f7f7f7;
+}
+
+footer {
+	position: relative;
+	text-align: center;
+	border-top: 1px solid rgba(0, 0, 0, 0.101);
+	background-color: rgb(231, 231, 231);
+	top: 250px;
+	width: 1903px;
+	left: -150px;
+	height: 200px;
+	font-size: small;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
