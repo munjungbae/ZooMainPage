@@ -30,7 +30,7 @@ function onload() {
 
     function change() {
     	let banner_num = Math.floor(Math.random() * (4 - 1 + 1) + 1);
-            let srcData = "http://localhost:8080/jspStudy/Zoo/img/Zoo"+banner_num+".png";
+            let srcData = 'http://localhost:8080/ZooMainPage/Zoo/img/Zoo'+banner_num+'.png';
             img.src = srcData;
     }
     intervalID = setInterval(change, 2000);
