@@ -17,7 +17,6 @@
 ### 🧰핵심 기능
 >- 홈페이지 소개 및 __로그인__, __회원가입__ 기능, __로그인 세션__ 에 따른 별도의 __기능 제공__
 >   - __로그인__ 및 __회원가입__
->       -
 >       - __아이디 중복체크__ 및 __패턴__ 적용
 >       - __우편찾기__ 기능 추가 및 선택 시 __해당 목록 추가__
 >  
@@ -34,9 +33,66 @@
 >- __MVC__ 아키텍처를 통한 코드 __구조화__
 
 ## 💠 ERD
->![](https://github.com/munjungbae/airPlaneService/blob/main/Relational.png)
+>![](https://github.com/munjungbae/ZooMainPage/blob/main/webuser_zoo.png)
 
 ### 📝 주요 기능
+- 테이블 생성
+```
+--학생테이블
+CREATE table STUDENT(
+ ID VARCHAR2(12) NOT NULL,
+ PASS VARCHAR2(12) NOT NULL,
+ NAME VARCHAR2(10) NOT NULL,
+ PHONE1 VARCHAR2(3) NOT NULL,
+ PHONE2 VARCHAR2(4) NOT NULL,
+ PHONE3 VARCHAR2(4) NOT NULL,
+ EMAIL VARCHAR2(30) NOT NULL,
+ ZIPCODE VARCHAR2(7) NOT NULL,
+ ADDRESS1 VARCHAR2(120) NOT NULL,
+ ADDRESS2 VARCHAR2(50) NOT NULL
+);
+ALTER TABLE STUDENT ADD CONSTRAINT STUDENT_PK PRIMARY KEY(ID);
+
+--집코드 테이블
+create table zipcode (
+ seq NUMBER(10) not null,
+ zipcode VARCHAR2(50),
+ sido VARCHAR2(50),
+ gugun VARCHAR2(50),
+ dong VARCHAR2(50),
+ bunji VARCHAR2(50)
+);
+ALTER TABLE zipcode ADD CONSTRAINT PK_ZIPCODE PRIMARY KEY(seq);
+
+--게시판 테이블
+CREATE TABLE BOARD (
+"NUM" NUMBER(7,0),
+WRITER VARCHAR2(12) NOT NULL ENABLE,
+EMAIL VARCHAR2(30) NOT NULL ENABLE,
+SUBJECT VARCHAR2(50) NOT NULL ENABLE,
+PASS VARCHAR2(10) NOT NULL ENABLE,
+READCOUNT NUMBER(5,0) DEFAULT 0,
+"REF" NUMBER(5,0) DEFAULT 0,
+STEP NUMBER(3,0) DEFAULT 0,
+"DEPTH" NUMBER(3,0) DEFAULT 0,
+REGDATE TIMESTAMP (6) DEFAULT SYSDATE,
+"CONTENT" VARCHAR2(4000) NOT NULL ENABLE,
+IP VARCHAR2(20) NOT NULL ENABLE
+ );
+ALTER TABLE BOARD ADD CONSTRAINT BOARD_PK PRIMARY KEY (NUM) ENABLE;
+
+--장바구니 테이블
+CREATE TABLE basket (
+"ID" VARCHAR2(12) NOT NULL,
+"NAME" VARCHAR2(10) NOT NULL,
+EMAIL VARCHAR2(30) NOT NULL,
+"DATE" TIMESTAMP(6) DEFAULT SYSDATE,
+TITLE VARCHAR2(50) NOT NULL,
+PRICE NUMBER(10) NOT NULL,
+"COUNT" NUMBER (10) NOT NULL
+);
+alter table basket add constraint basket_id_fk  foreign key(id) references student (id);
+```
 - 로그인 및 회원가입 체크 및 세션 적용
 ```
 <%
