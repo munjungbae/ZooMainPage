@@ -1,7 +1,6 @@
 # 🐘ZooMainPage
->+ 동물원 홈페이지
 
-## 📋 프로그램 소개
+## 📋  소개
 >- 동물원 소개 및 동물원 티켓 예매 프로그램
 <br>
 
@@ -344,24 +343,26 @@ function onload() {
 
 ### 📝실행화면
 
-- __메인화면__
+- __메인화면__, __로그인__ 및 __회원가입__ 
 
- ![login](https://github.com/user-attachments/assets/9cfdd855-2c08-496a-9478-eb34d884700a)
- 
-- __로그인__ 및 __회원가입__ 화면
+![main, login, register](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/login.png)
+![](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/register.png)
 
-![customer, plane](https://github.com/user-attachments/assets/918322b8-d32d-43e2-aba0-91f51851ee51)
+- __게시판__ 및 __게시판 내용__
 
-- __우편찾기__ 기능 및 실 적용 화면
+![board](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/board.png)
+![](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/content.png)
 
-![country, flight](https://github.com/user-attachments/assets/8a9ca208-922b-4365-8c5e-086eff18df05)
+- __티켓 예매__ 화면 및 __비 로그인__ 시 __알림__  
 
-- 게시판 __목록__, __입력__, __삭제__, __수정__, __답글__ 기능 화면
+![ticket](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/ticket.png)
+![](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/addticket.png)
+![](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/session.png)
 
-![CUSTOMER BOOKING](https://github.com/user-attachments/assets/bb50e043-2c54-4b11-a2f9-abfe7ea3a214)
+- __본인 인증__ 을 위한 __개인정보__ 확인 및 __개인정보__ 수정, __장바구니__
 
-- 타켓 __예매__ 및 __예약목록__ 확인 기능 화면
-
-![CUSTOMER BOOKING LIST, LIST](https://github.com/user-attachments/assets/f89280a7-2adf-44b4-b1d9-7f3f89c4e188)
+![checkpass, basket](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/checkPass.png)
+![](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/updateId.png)
+![](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/basket.png)
 
 - __개인정보 확인__ 및 __수정__ 기능 화면
