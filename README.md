@@ -34,6 +34,10 @@
 ## 💠 ERD
 >![](https://github.com/munjungbae/ZooMainPage/blob/main/webuser_zoo.png)
 
+## 🎥 소개 동영상
+>!https://www.youtube.com/watch?v=odbPmIotR98
+
+
 ### 📝 주요 기능
 - 테이블 생성
 ```
