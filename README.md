@@ -368,5 +368,3 @@ function onload() {
 ![checkpass, basket](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/checkPass.png)
 ![](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/updateId.png)
 ![](https://github.com/munjungbae/ZooMainPage/blob/main/zoo/basket.png)
-
-- __개인정보 확인__ 및 __수정__ 기능 화면
